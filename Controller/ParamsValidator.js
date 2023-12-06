@@ -6,7 +6,7 @@ function ParamValidator(paramsBody,paramsNames,paramsWithNull,blankParams){
         inputParamsError.undefinedParams=[];
         inputParamsError.blankParams=[]
         inputParamsError.nullParams=[]
-        paramsBody.forEach(name => {
+        paramsNames.forEach(name => {
             if(paramsBody[name]===undefined){
                 inputParamsError.undefinedParams.push(name)
             }else{

@@ -18,9 +18,11 @@ password
           }).then((result)=>{
               resolve(result)
           }).catch(function (err){
+            console.log(err)
             res.status(503).json(err)
           })
-    }).catch(function(error){
+    }).catch(function(err){
+        console.log(err)
         res.status(503).json(error)
     })
 }
